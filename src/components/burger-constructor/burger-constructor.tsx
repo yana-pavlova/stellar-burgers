@@ -1,17 +1,16 @@
 import { FC, useMemo, useState } from 'react';
 import { TConstructorIngredient, TOrder } from '@utils-types';
 import { BurgerConstructorUI } from '@ui';
-import { useDispatch, useSelector } from 'react-redux';
 import { selectCartItems, selectLoading } from '../../slices/burgerSlice';
 import { selectUser } from '../../slices/userSlice';
 import { useNavigate } from 'react-router-dom';
 import { sendOrder } from '../../slices/burgerSlice';
-import { AppDispatch } from '../../services/store';
+import { useDispatch, useSelector } from '../../services/store';
 
 export const BurgerConstructor: FC = () => {
-  const loading: boolean = useSelector(selectLoading);
+  const loading = useSelector(selectLoading);
   const cartItems = useSelector(selectCartItems);
-  const dispatch: AppDispatch = useDispatch();
+  const dispatch = useDispatch();
   const user = useSelector(selectUser);
   const navigate = useNavigate();
 

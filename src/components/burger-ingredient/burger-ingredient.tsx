@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import { BurgerIngredientUI } from '@ui';
 import { TBurgerIngredientProps } from './type';
-import { useDispatch } from 'react-redux';
+import { useDispatch } from '../../services/store';
 import { addCartItem } from '../../slices/burgerSlice';
 import { TConstructorIngredient } from '@utils-types';
 import { nanoid } from '@reduxjs/toolkit';

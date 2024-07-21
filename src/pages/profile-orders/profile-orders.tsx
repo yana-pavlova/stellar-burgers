@@ -1,7 +1,6 @@
 import { ProfileOrdersUI } from '@ui-pages';
 import { FC, useEffect } from 'react';
-import { useSelector } from 'react-redux';
-import { AppDispatch, useDispatch } from '../../services/store';
+import { useSelector, useDispatch } from '../../services/store';
 import {
   fetchOrders,
   selectOrders,
@@ -10,7 +9,7 @@ import {
 import { Preloader } from '@ui';
 
 export const ProfileOrders: FC = () => {
-  const dispatch: AppDispatch = useDispatch();
+  const dispatch = useDispatch();
   const orders = useSelector(selectOrders);
   const loading = useSelector(selectLoading);
 

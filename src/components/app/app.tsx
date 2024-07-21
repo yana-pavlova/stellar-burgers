@@ -14,12 +14,11 @@ import styles from './app.module.css';
 
 import { AppHeader, IngredientDetails, Modal, OrderInfo } from '@components';
 import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
-import { ProtectedRoute } from '../ProtectedRoute';
+import { ProtectedRoute } from '../routes/ProtectedRoute';
 import { getCookie } from '../../utils/cookie';
 import { fetchUser } from '../../slices/userSlice';
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch } from 'src/services/store';
+import { useDispatch, useSelector } from '../../services/store';
 import {
   fetchIngredients,
   selectIngredients
@@ -27,7 +26,7 @@ import {
 import { fetchFeed, selectFeed } from '../../slices/feedSlice';
 
 const App = () => {
-  const dispatch: AppDispatch = useDispatch();
+  const dispatch = useDispatch();
   const location = useLocation();
   const state = location.state as { backgroundLocation?: Location };
   const navigate = useNavigate();

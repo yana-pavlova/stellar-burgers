@@ -1,11 +1,7 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { AppDispatch } from 'src/services/store';
-import { fetchUser, selectLoading, selectUser } from '../slices/userSlice';
+import { useSelector } from '../../services/store';
+import { selectLoading, selectUser } from '../../slices/userSlice';
 import { Preloader } from '@ui';
-import { Navigate, useLocation, useParams } from 'react-router-dom';
-import { TUser } from '@utils-types';
-import { NotFound404 } from '@pages';
+import { Navigate, useLocation } from 'react-router-dom';
 
 type ProtectedRouteProps = {
   children: React.ReactElement;

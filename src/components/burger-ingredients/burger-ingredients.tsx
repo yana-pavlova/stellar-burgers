@@ -7,7 +7,7 @@ import { useSelector } from '../../services/store';
 import { selectIngredients } from '../../slices/ingredientsSlice';
 
 export const BurgerIngredients: FC = () => {
-  const ingredients: TIngredient[] = useSelector(selectIngredients);
+  const ingredients = useSelector(selectIngredients);
 
   const buns = ingredients.filter((i) => i.type === 'bun');
   const mains = ingredients.filter((i) => i.type === 'main');
