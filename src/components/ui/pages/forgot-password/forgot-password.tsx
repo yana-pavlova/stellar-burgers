@@ -4,6 +4,8 @@ import { Input, Button } from '@zlden/react-developer-burger-ui-components';
 import styles from '../common.module.css';
 import { Link } from 'react-router-dom';
 import { PageUIProps } from '../common-type';
+import { AppDispatch } from 'src/services/store';
+import { useDispatch } from 'react-redux';
 
 export const ForgotPasswordUI: FC<PageUIProps> = ({
   errorText,
