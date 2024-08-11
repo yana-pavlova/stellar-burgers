@@ -10,7 +10,7 @@ interface BurgerState {
 }
 
 // начальное состояние для слайса
-const initialState: BurgerState = {
+export const initialState: BurgerState = {
   cartItems: [],
   loading: false,
   error: null

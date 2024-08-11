@@ -1,12 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import ordersReducer, { fetchOrders } from './ordersSlice';
-
-// начальное состояние стора
-const initialState = {
-  orders: [],
-  loading: false,
-  error: null
-};
+import ordersReducer, { fetchOrders, initialState } from './ordersSlice';
 
 const mockOrders = [
   {

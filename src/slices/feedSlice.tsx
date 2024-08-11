@@ -9,7 +9,7 @@ interface FeedState {
   error: string | null;
 }
 
-const initialState: FeedState = {
+export const initialState: FeedState = {
   feed: { orders: [], total: null, totalToday: null },
   loading: false,
   error: null

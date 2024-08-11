@@ -2,7 +2,8 @@ import burgerReducer, {
   addCartItem,
   removeCartItem,
   moveCartItemUp,
-  moveCartItemDown
+  moveCartItemDown,
+  initialState
 } from './burgerSlice';
 
 // Моковые данные ингредиентов
@@ -52,13 +53,6 @@ const sauce = {
   image_mobile: '',
   image_large: '',
   __v: 0
-};
-
-// Начальное состояние
-const initialState = {
-  cartItems: [],
-  loading: false,
-  error: null
 };
 
 describe('тест burgerReducer', () => {

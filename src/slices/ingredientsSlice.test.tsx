@@ -1,12 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import ingredientsReducer, { fetchIngredients } from './ingredientsSlice';
-
-// начальное состояние стора
-const initialState = {
-  ingredients: [],
-  loading: false,
-  error: null
-};
+import ingredientsReducer, {
+  fetchIngredients,
+  initialState
+} from './ingredientsSlice';
 
 // функция для создания тестового стора
 const createTestStore = (preloadedState = initialState) =>

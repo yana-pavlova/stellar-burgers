@@ -5,15 +5,10 @@ import userReducer, {
   loginUser,
   updateUser,
   logoutUser,
-  UserState
+  UserState,
+  initialState
 } from './userSlice';
 import * as cookieUtils from '../utils/cookie';
-
-const initialState: UserState = {
-  user: null,
-  loading: false,
-  error: null
-};
 
 const mockUser = { email: 'test@test.test', name: 'John Doe' };
 

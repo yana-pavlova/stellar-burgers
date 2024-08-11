@@ -1,13 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import feedReducer, { fetchFeed } from './feedSlice';
+import feedReducer, { fetchFeed, initialState } from './feedSlice';
 import { TFeedsResponse } from '@api';
-
-// начальное состояние стора
-const initialState = {
-  feed: { orders: [], total: null, totalToday: null },
-  loading: false,
-  error: null
-};
 
 // функция для создания тестового стора
 const createTestStore = (preloadedState = initialState) =>
