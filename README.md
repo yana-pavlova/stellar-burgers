@@ -1,4 +1,5 @@
 # Stellar Burgers — космическая бургерная
+![1728569288446824](https://github.com/user-attachments/assets/db457431-a2bd-4148-8d6c-6a7d3afd166b)
 
 ## Стек
 <a href="https://www.typescriptlang.org/"><img height="32" width="32" src="https://cdn.simpleicons.org/typescript" /></a>
