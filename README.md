@@ -7,6 +7,9 @@
 - приложение покрыто тестами на Cypress и Jest
 
 ## Запуск проекта
-<code>npm i</code>
-
-<code>npm run start</code>
+```
+npm i
+```
+```
+npm run start
+```
